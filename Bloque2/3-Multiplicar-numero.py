@@ -7,4 +7,5 @@ def multiplicar(num1, num2):
     return num1 * num2
 
 producto = reduce(multiplicar, numeros)
+# producto = reduce(lambda a, b: a * b, numeros)
 print(producto)

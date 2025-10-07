@@ -3,7 +3,6 @@ def cel_2_fahr(celsius):
     return round(fahrenheit, 1)
 
 celsius_temperaturas = [0.0, 10.5, 22.0, 35.5, -5.0, 15.0]
-fahrenheit_temperaturas = map(cel_2_fahr, celsius_temperaturas)
+fahrenheit_temperaturas = list(map(cel_2_fahr, celsius_temperaturas))
 
-for temp in fahrenheit_temperaturas:
-    print(temp)
+print(fahrenheit_temperaturas)
