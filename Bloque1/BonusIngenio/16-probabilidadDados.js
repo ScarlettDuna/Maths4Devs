@@ -6,9 +6,9 @@ const n = 100_000
 let contador = 0
 
 for (let i = 0; i < n; i++) {
-    let dado1 = Math.floor(Math.random() * 7) + 1
-    let dado2 = Math.floor(Math.random() * 7) + 1
+    let dado1 = Math.floor(Math.random() * 6) + 1
+    let dado2 = Math.floor(Math.random() * 6) + 1
     if (dado1 + dado2 === 7) contador += 1
 }
 
-console.log(`La probabilidad aproximada es ${contador/n}`)
+console.log(`Probabilidad ≈ ${(contador / n * 100).toFixed(2)}%`);

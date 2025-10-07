@@ -5,3 +5,5 @@ for num in numeros:
     if num % 2 == 0:
         sumaPares += num
 print(sumaPares)
+
+# suma_pares = sum(n for n in numeros if n % 2 == 0)

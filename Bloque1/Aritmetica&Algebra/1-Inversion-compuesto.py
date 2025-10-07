@@ -7,3 +7,6 @@ def inversion_compuesta(V_inicial, interes_anual, anios):
     return V_final
 
 print(inversion_compuesta(500, 2.5, 3))
+
+""" def inversion_compuesta(V_inicial, interes_anual, anios):
+    return V_inicial * (1 + interes_anual / 100) ** anios """

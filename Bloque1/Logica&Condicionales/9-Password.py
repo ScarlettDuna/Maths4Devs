@@ -27,3 +27,18 @@ def pass_checker(password):
         return "Tienes que mejorar tu contaseña"
     
 print(pass_checker("Anchan2025&"))
+
+
+""" Corrección de ChatGPT
+import string
+
+def pass_checker(password):
+    if len(password) < 8:
+        return "Demasiado corta"
+    tieneMayus = any(ch.isupper() for ch in password)
+    tieneMinus = any(ch.islower() for ch in password)
+    tieneNum = any(ch.isdigit() for ch in password)
+    tieneChar = any(ch in string.punctuation for ch in password)
+    return "SUPER SEGURA" if all([tieneMayus, tieneMinus, tieneNum, tieneChar]) else "Mejora tu contraseña"
+
+"""
