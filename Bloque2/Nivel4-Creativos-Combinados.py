@@ -33,7 +33,7 @@ while figures > 0:
     suma_digitos += (figures % 10)
     figures //= 10
 print(suma_digitos)
-suma_digitos2 = reduce(lambda acc, x: acc + x, [int(d) for d in str(num)], 0) # con reduce
+suma_digitos2 = reduce(lambda acc, x: acc + x, [int(d) for d in str(figures)], 0) # con reduce
 
 # Dada una lista de palabras, agrúpalas por su longitud en un diccionario.
 # ["hola","sol","nube","sí"] → {4:["hola","nube"],3:["sol"],2:["sí"]}
